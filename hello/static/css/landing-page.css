@@ -207,10 +207,6 @@ h6 {
     padding-bottom: 0px;
 }
 
-#agenda table tr{
-    margin-bottom: 5px;
-}
-
 #agenda table td{
     vertical-align: top;
 }
@@ -285,7 +281,11 @@ footer ul li p, footer ul li i{
     align-items: flex-start ;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 0px;    
+}
+
+footer ul li{
+    vertical-align: top;
 }
 
 footer p.copyright {    
@@ -475,17 +475,16 @@ ul li.helper {
         text-align: center;
     }
     
-    #agenda table tr {
-        padding: 0px;
-        margin-bottom: 15px;      
+    #agenda .spacer {
+        height: 15px;      
 
     }
-
-    #agenda p {
-        line-height: 1.5;
+    
+    #agenda .j_inline {
+        line-height: 1.6;
     }
 
-    footer ul li{
+    footer ul li {        
         margin-top: 5px;
         margin-bottom: 5px;
     }
@@ -529,25 +528,32 @@ ul li.helper {
         margin-top: 40px;
     }
 
-    #agenda ul li {
-        padding: 0px;
-        margin-bottom: 15px;      
-
+    #speakers ul:before {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
     }
 
-    #agenda p {
-        line-height: 1.5;
+    #speakers ul {
+        text-align: center;
+    }
+
+    #agenda .spacer {
+        height: 15px;      
+
+    }
+    
+    #agenda .j_inline {
+        line-height: 1.9;
+    }
+
+    footer ul li{
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
 }
 
-@media (min-width: 425px) and (max-width: 768px) {
-    #agenda ul li {
-        padding: 0px;
-
-    }
-
-}
 
 
 
