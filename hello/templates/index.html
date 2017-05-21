@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>E-dem Conference</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
+    <link href="{% static "css/landing-page.css" %}" rel="stylesheet">
+    <link href="{% static "font-awesome/css/font-awesome.min.css" %}" rel="stylesheet">
+
+    
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navigation" class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+            
+                <p class="crop j_inline" id="e_dem_banner">
+                    <img src="/static/img/e_dem.png">
+                </p>
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#main">Головна</a>
+                    </li>
+                    <li>
+                        <a href="#conference">Конференція</a>
+                    </li>
+                    <li>
+                        <a href="#creators">Організатори</a>
+                    </li>
+                    <li>
+                        <a href="#speakers">Спікери</a>
+                    </li>
+                    <li>
+                        <a href="#agenda">Програма</a>
+                    </li>
+                    <li>
+                        <a href="#map">Карта</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header" id="main">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Конференція<br>"Інструменти електронної<br>демократії у ВНЗ"</h1>
+                        <hr class="intro-divider">                        
+                        <h3 class="intro_inline_block" >27 травня 2017</h3>
+                        <h3 class="intro_inline_block">Київ</h3>
+                        
+                        <button id="register" class="intro_inline_block mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent button_reg">
+                          Реєстрація
+                        </button>                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="content-section-a" id="conference">
+        <div class="container">
+            <div class="row">                
+                <div class="col-xs-1 .col-sm-1 col-md-1 col-lg-1"></div>
+                <div class="col-xs-10 .col-sm-10 col-md-10 col-lg-10">
+                    <div class="clearfix"></div>
+                    <h1 class="section-heading">Щорічна постійна<br> конференція</h1>
+                    <p class="lead" align="justify">
+                        
+                        Конференція присвячена інструментам е-демократії у Вищих навчальних закладах, першим е-виборам голови Студентського парламенту Київського національного університету імені Тараса Шевченка, що відбулись 27 квітня 2017 року. 
+                        Популяризація досвіду, розвиток, трансформація та пошук механізмів подальшого ефективного впровадженню електронної системи голосування.
+                        Учасники конференції: студенти ВНЗ України, представники Центральної виборчої комісії України, спікери від міжнародних організацій та кращі ІТ фахівці країни.
+                    </p>
+                    <div id="speakers_div">
+                        <a href="#speakers">
+                            <i class="j_inline fa fa-arrow-down fa-3x" aria-hidden="true"></i>
+                            <p style="margin-bottom: 0px" class="j_inline"> Спікери</p> 
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-1 .col-sm-1 col-md-1 col-lg-1"></div>                                  
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section-b" id="creators">
+        <div class="container">
+            <div class="" class="row">
+                <div class="col-xs-1 .col-sm-1 col-md-1 col-lg-1"></div>
+                <div class="col-xs-10 .col-sm-10 col-md-10 col-lg-10">
+                    
+                    <h1 class="section-heading">Про організаторів</h1>
+                    <hr class="intro-divider"> 
+                    <p>Організаторами конференції є громадська організація "Електронна Демократія" та ЦВК студентів (курсантів) КНУ імені Тараса Шевченка</p>
+
+                </div>
+                <div class="col-xs-1 .col-sm-1 col-md-1 col-lg-1"></div>  
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content-section-a" id="speakers">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-1 .col-sm-1 col-md-1 col-lg-1"></div>
+                <div class="col-xs-10 .col-sm-10 col-md-10 col-lg-10">
+                    <h1>Cпікери</h1>
+                    <hr class="intro-divider">
+                    <ul>
+                        <li class="j_inline sp_mar">
+                            <div class="ph1-card-image mdl-card mdl-shadow--2dp">
+                                <div class="mdl-card__title mdl-card--expand"></div>
+                                <div class="mdl-card__actions">
+                                    <span class="ph1-card-image__filename">Володимир Фльонц</span>
+                                </div>
+                            </div>
+                        </li> 
+
+                        <li class="j_inline sp_mar">   
+                            <div class="ph2-card-image mdl-card mdl-shadow--2dp">
+                                <div class="mdl-card__title mdl-card--expand"></div>
+                                <div class="mdl-card__actions">
+                                    <span class="ph2-card-image__filename">Дмитро Хуткий</span>
+                                </div>
+                            </div>
+                        </li>    
+                        
+                        <li class="j_inline sp_mar">   
+                            <div class="ph3-card-image mdl-card mdl-shadow--2dp">
+                                <div class="mdl-card__title mdl-card--expand"></div>
+                                <div class="mdl-card__actions">
+                                    <span class="ph3-card-image__filename">Андрій Магера</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="helper"></li>
+                    </ul>
+
+                    <ul>
+                        <li class="j_inline">
+                            <div class="ph4-card-image mdl-card mdl-shadow--2dp">
+                                <div class="mdl-card__title mdl-card--expand"></div>
+                                <div class="mdl-card__actions">
+                                    <span class="ph4-card-image__filename">Юлія Корзенюк</span>
+                                </div>
+                            </div>
+                        </li> 
+
+                        <li class="j_inline">   
+                            <div class="ph5-card-image mdl-card mdl-shadow--2dp">
+                                <div class="mdl-card__title mdl-card--expand"></div>
+                                <div class="mdl-card__actions">
+                                    <span class="ph5-card-image__filename">Яніка Меріло</span>
+                                </div>
+                            </div>
+                        </li>    
+                        
+                        <li class="j_inline">   
+                            <div class="ph6-card-image mdl-card mdl-shadow--2dp">
+                                <div class="mdl-card__title mdl-card--expand"></div>
+                                <div class="mdl-card__actions">
+                                    <span class="ph6-card-image__filename">Йорданка Томкова</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="helper"></li>
+                    </ul>
+                </div>
+                <div class="col-xs-1 .col-sm-1 col-md-1 col-lg-1"></div>  
+            </div>
+
+        </div>
+    </div>
+
+    <div class="content-section-c">        
+    </div>
+    <!-- /.content-section-c -->
+	<div class="content-section-a" id="agenda">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-1 .col-sm-1 col-md-1 col-lg-1"></div>
+                <div class="col-xs-10 .col-sm-10 col-md-10 col-lg-10">
+                    <h1>Програма</h1>
+                    <hr class="intro-divider">
+                    <ul class="demo-list-item mdl-list" id="agenda">
+                        <li class="mdl-list__item">                           
+                            
+                            <div class="j_inline">
+                                <p class="mdl-list__item-primary-content">
+                                09:30 - 10:00 &nbsp; &nbsp; -
+                                </p>
+                            </div>
+                            <div class="j_inline">
+                                <p class="mdl-list__item-primary-content">
+                                Реєстрація
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="mdl-list__item">
+
+                            <div class="j_inline">
+                                <p class="mdl-list__item-primary-content">
+                                10:00 - 10:15 &nbsp; &nbsp; -
+                                </p>
+                            </div>
+                            <div class="j_inline">
+                                <p class="mdl-list__item-primary-content">
+                                Вітальне слово.
+                                </p>
+                            </div>
+                            
+                        </li>
+
+                        <li class="mdl-list__item">
+
+                            <div class="j_inline" >
+                                <p class="mdl-list__item-primary-content">
+                                10:15 - 11:00 &nbsp; &nbsp; -
+                                </p>
+                            </div>
+                            <div class="j_inline">
+                                <p class="mdl-list__item-primary-content" align="justify">
+                                Інструменти електронної демократії: теорія та практика Йорданка Томкова, експерт проекту Швейцарського бюро співробітництва «Електронне урядування підзвітності влади та участі суспільства» (EGAP).
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="mdl-list__item">
+
+                            <div class="j_inline" >
+                                <p class="mdl-list__item-primary-content">
+                                11:00 - 12:00 &nbsp; &nbsp; -
+                                </p>
+                            </div>
+                            <div class="j_inline">
+                                <p class="mdl-list__item-primary-content" align="justify">
+                                Від паперових до електронних виборів: що зроблено в світі та Україні.
+                                Магера Андрій, заступник голови Центральної виборчої комісії.
+                       
+                                Яніка Меріло, радник міського голови міста Дніпро, радник міністра інфраструктури                                 України, фахівець з питань ангельських інвестицій та інформаційного суспільства.
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="mdl-list__item">
+
+                            <div class="j_inline" >
+                                <p class="mdl-list__item-primary-content">
+                                12:00 - 12:30 &nbsp; &nbsp; -
+                                </p>
+                            </div>
+                            <div class="j_inline">
+                                <p class="mdl-list__item-primary-content" >
+                                Кава-пауза
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="mdl-list__item">
+
+                            <div class="j_inline" >
+                                <p class="mdl-list__item-primary-content">
+                                12:30 - 13:00 &nbsp; &nbsp; -
+                                </p>
+                            </div>
+                            <div class="j_inline">
+                                <p class="mdl-list__item-primary-content" align="justify">
+                                Кібербезпека під час проведення інтернет-голосувань та електронних-виборів.
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="mdl-list__item">
+
+                            <div class="j_inline" >
+                                <p class="mdl-list__item-primary-content">
+                                13:00 - 13:30 &nbsp; &nbsp; -
+                                </p>
+                            </div>
+                            <div class="j_inline">
+                                <p class="mdl-list__item-primary-content" align="justify">
+                                Вибори у вищих навчальних закладах: від паперових до електронних
+                                Юлія Корзенюк, голова Центральної виборчої комісії студентів Київського національного                         університету імені Тараса Шевченка.
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="mdl-list__item">
+
+                            <div class="j_inline" >
+                                <p class="mdl-list__item-primary-content">
+                                13:30 - 14:30 &nbsp; &nbsp; -
+                                </p>
+                            </div>
+                            <div class="j_inline">
+                                <p class="mdl-list__item-primary-content" align="justify">
+                                Презентація практичного кейсу по технології виборів за бюлетнем Бісмарка.
+                       Володимир Фльонц, голова громадської організації “Електронна демократія”
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="mdl-list__item">
+
+                            <div class="j_inline" >
+                                <p class="mdl-list__item-primary-content">
+                                14:30 - 15:00 &nbsp; &nbsp; -
+                                </p>
+                            </div>
+                            <div class="j_inline">
+                                <p class="mdl-list__item-primary-content" align="justify">
+                                Голосування за допомогою бюлетня Бісмарка для учасників конференції.
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="mdl-list__item">
+
+                            <div class="j_inline" >
+                                <p class="mdl-list__item-primary-content">
+                                15:00 - 15:15 &nbsp; &nbsp; -
+                                </p>
+                            </div>
+                            <div class="j_inline">
+                                <p class="mdl-list__item-primary-content" align="justify">
+                                Підведення підсумків голосування та конференції.
+                                </p>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-1 .col-sm-1 col-md-1 col-lg-1"></div>  
+            </div>
+
+        </div>
+    </div>
+
+    <div class="content-section-d" id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1272.0515387229798!2d30.469949976141102!3d50.383276994841395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDIyJzU5LjgiTiAzMMKwMjgnMTUuOCJF!5e0!3m2!1sru!2sua!4v1495314624409" width="1200" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>        
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-1 .col-sm-1 col-md-1 col-lg-1"></div>
+                <div class="col-xs-10 .col-sm-10 col-md-10 col-lg-10">
+                    <ul class="list-inline">
+                        <li>
+                            
+                            <p class="mdl-list__item-primary-content">Ми на Facebook</p>
+                            <i class="fa fa-facebook-square fa-2x" aria-hidden="true" id="facebook_icon"></i>
+                            
+                        </li>
+                        
+                        <li>
+
+                            <p class="mdl-list__item-primary-content">Адреса проведення</p>
+                            <p class="mdl-list__item-primary-content">Проспект Академіка Глушкава 4Д<br> (Корпус факультету кібернетики)</p>
+
+                        </li>
+                        
+                        <li>
+                            <p class="mdl-list__item-primary-content">Contact</a>
+                            <p class="mdl-list__item-primary-content">+380633779965</a>
+
+                        </li>
+                        <li class="helper"></li>
+                    </ul>
+                    <p class="copyright">Copyright &copy; <a href="https://www.facebook.com/kukhelnyi"> &nbsp; mrkiril &nbsp; </a> 2017. All Rights Reserved</p>
+                </div>
+                <div class="col-xs-1 .col-sm-1 col-md-1 col-lg-1"></div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static "js/jquery.js" %}"></script>
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+    <script src="{% static "js/core_conference.js" %}"></script>
+</body>
+
+</html>
