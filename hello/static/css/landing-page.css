@@ -245,8 +245,7 @@ h6 {
 
 .banner {
     padding: 100px 0;
-    color: #f8f8f8;
-    background: url(../img/banner-bg.jpg) no-repeat center center;
+    color: #f8f8f8;    
     background-size: cover;
 }
 
