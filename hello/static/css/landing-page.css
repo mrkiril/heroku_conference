@@ -198,11 +198,7 @@ h6 {
     line-height: 1.9;
 }
 
-#agenda p {
-    display: -webkit-flex ; 
-    -webkit-align-items: flex-start ;
-    display: flex ;
-    align-items: flex-start ;
+#agenda p {    
     margin-top: 0px;
     margin-bottom: 0px;
     padding-bottom: 0px;
@@ -217,11 +213,23 @@ h6 {
     margin-bottom: 30px;
 }
 
+#agenda .j_lef {    
+    white-space: nowrap;    
+}
+
+#agenda .speaker_name{
+    white-space: nowrap;
+    color: #ff4f4f;
+    
+}
+
 .section-heading-spacer {
     float: left;
     width: 200px;
     border-top: 3px solid #e7e7e7;
 }
+
+
 
 .banner {
     padding: 100px 0;
@@ -423,13 +431,28 @@ ul li.helper {
   font-weight: 500;
 }
 
-#agenda .j_lef {    
-    white-space: nowrap;    
+
+
+.ph7-card-image.mdl-card {
+  width: 256px;
+  height: 256px;
+  background: url('../img/man3.jpg') center / cover;
 }
+.ph7-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.ph7-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
 
 .spacer {
     height: 20px;      
-
 }
 
 
