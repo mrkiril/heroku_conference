@@ -195,7 +195,7 @@ h6 {
 }
 #agenda .j_inline {
     color: #fff;    
-    line-height: 2.1;
+    line-height: 1.9;
 }
 
 #agenda p {
@@ -427,6 +427,10 @@ ul li.helper {
     white-space: nowrap;    
 }
 
+.spacer {
+    height: 20px;      
+
+}
 
 
 @media (max-width: 425px) {
@@ -475,11 +479,12 @@ ul li.helper {
     #speakers ul {
         text-align: center;
     }
-    
+    /*
     #agenda .spacer {
-        height: 15px;      
+        height: 20px;      
 
     }
+    */
     
     #agenda .j_inline {
         line-height: 1.6;
